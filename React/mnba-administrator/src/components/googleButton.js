@@ -13,7 +13,7 @@ class GoogleButton extends Component {
     };
 
     this.login = this.login.bind(this);
-    this.loginFailure = this.loginFailure.bind(this);
+    //this.loginFailure = this.loginFailure.bind(this);
 
     this.logout = this.logout.bind(this);
     this.logoutFailure = this.logoutFailure.bind(this);
@@ -26,6 +26,10 @@ class GoogleButton extends Component {
         accessToken: response.Zi.access_token
       }));
     }
+
+    else {
+      alert('Failed to log in. Please try again.')
+    }
   }
   
   logout(response) {
@@ -33,10 +37,6 @@ class GoogleButton extends Component {
       isLoggedIn: false,
       accessToken: ''
     }));
-  }
-
-  loginFailure(response) {
-    alert('Failed to log in. Please try again.')
   }
 
   logoutFailure(response) {
@@ -58,7 +58,6 @@ class GoogleButton extends Component {
             clientId={CLIENT_ID}
             buttonText='Login with Google'
             onSuccess={this.login}
-            onFailure={this.loginFailure}
             cookiePolicy={'single_host_origin'}
             responseType='code,token'
           />
