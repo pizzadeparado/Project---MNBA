@@ -10,12 +10,12 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">CDLP Administrator Page</h1>
+        <h1 className="title">CdlP Administrator Page</h1>
 
         <p className="description">Get started by logging in.</p>
 
         <div className="card">
-          <Link href="/">
+          <Link href="homepage/welcome">
             {/* <GoogleLogin
               clientId="myclientid"
               buttonText="Login"
