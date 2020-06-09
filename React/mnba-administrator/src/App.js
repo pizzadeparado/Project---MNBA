@@ -5,15 +5,11 @@ import GoogleButton from './components/googleButton';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <title>Administrator Page</title>
-        <link rel="icon" href="/favicon.ico"></link>
-      </header>
       <div className="container">
         <main>
-          <h1 className="title">CdlP Administrator Page</h1>
+          <h1 className="title">Administrador Catedral</h1>
 
-          <p className="description">Get started by logging in.</p>
+          <p className="description">Para comenzar, iniciá sesión con tu cuenta de Google.</p>
 
           <div className="card">
             <GoogleButton />
