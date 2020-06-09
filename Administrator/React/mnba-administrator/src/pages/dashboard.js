@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import './posts';
+import './users';
 
-export default function Home() {
+export default function Dashboard() {
   return (
     <div className="container">
       <header>
@@ -18,14 +20,6 @@ export default function Home() {
 
           <a href="users" className="card">
             <h3>Users &rarr;</h3>
-          </a>
-
-          <a href="analytics" className="card">
-            <h3>Analytics &rarr;</h3>
-          </a>
-
-          <a href="deploy" className="card">
-            <h3>Deploy &rarr;</h3>
           </a>
 
           <a href="../index" className="card">
